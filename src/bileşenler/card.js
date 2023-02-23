@@ -37,7 +37,7 @@ const Card = (makale) => {
   image.setAttribute("src", makale.yazarFoto);
 
   const spanAuthor = document.createElement("span");
-  spanAuthor.textContent = makale.yazarAdı;
+  spanAuthor.textContent = makale.yazarAdi + "tarafından";
 
   divCard.append(divHeadline, divAuthor);
   divAuthor.append(divImg, spanAuthor);
